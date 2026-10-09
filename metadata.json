@@ -1,0 +1,6 @@
+{
+  "name": "+1000 Atividades para Idosos - Kit Completo",
+  "description": "Mais de 1000 atividades e exercícios adaptados para idosos, organizados por nível e objetivo. Acesso vitalício, garantia de 7 dias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

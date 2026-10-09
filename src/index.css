@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+    --background: #fff;
+    --foreground: #020618;
+    --card: #fff;
+    --card-foreground: #020618;
+    --popover: #fff;
+    --popover-foreground: #020618;
+    --primary: #0f172b;
+    --primary-foreground: #f8fafc;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172b;
+    --muted: #f1f5f9;
+    --muted-foreground: #62748e;
+    --accent: #f1f5f9;
+    --accent-foreground: #0f172b;
+    --destructive: #e40014;
+    --destructive-foreground: #f8fafc;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #90a1b9;
+    --offer: #1447e6;
+    --offer-soft: #54a2ff;
+    --offer-success: #00a544;
+    --offer-surface: #f8fafc;
+    --material-green: #00a544;
+    --material-coral: #fe6e00;
+    --material-mint: #f0fdf4;
+    --material-card-accent: #1447e6;
+    --material-card-soft: #eff6ff;
+    --material-highlight: #193cb8;
+  }
+}
+
+.gradient-heading,
+.gradient-heading-blue {
+  color: transparent;
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.gradient-heading-yellow {
+  color: transparent;
+  background: linear-gradient(90deg, #eab308, #facc15);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.gradient-bar {
+  background: linear-gradient(90deg, #0369a1, #0284c7 60%, #38bdf8);
+}
+
+.gradient-cta {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  animation: 2s ease-in-out infinite cta-pulse;
+  box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.55);
+}
+
+.gradient-cta:hover {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+}
+
+.gradient-premium-badge {
+  background: linear-gradient(135deg, #0369a1, #0284c7, #38bdf8);
+}
+
+.premium-card {
+  background: linear-gradient(#f0f9ff, #fff);
+  border: 2px solid #38bdf8;
+}
+
+.bg-offer {
+  background-color: var(--offer);
+}
+.bg-offer-soft {
+  background-color: var(--offer-soft);
+}
+.bg-offer-success {
+  background-color: var(--offer-success);
+}
+.bg-offer-surface {
+  background-color: var(--offer-surface);
+}
+.text-offer-success {
+  color: var(--offer-success);
+}
+.bg-material-card-soft {
+  background-color: var(--material-card-soft);
+}
+.text-material-card-accent {
+  color: var(--material-card-accent);
+}
+.bg-material-highlight {
+  background-color: var(--material-highlight);
+}
+
+@keyframes cta-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.55), 0 0 rgba(34, 197, 94, 0.5);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 10px 30px -10px rgba(34, 197, 94, 0.75), 0 0 0 12px rgba(34, 197, 94, 0);
+  }
+}
